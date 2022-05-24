@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--if..else statement test-->
+    <script>
+
+        'use strict'
+
+        let answer = prompt("What is the \"official\" name of Javascript?");
+        
+        if (answer = "ECMAScript") {
+            alert("Right!");
+        }   else {
+            alert("You don't know? \"ECMAScript\"!");
+        }
+    </script>
+    
+    <!--if..else statement with inequalities-->
+    <script>
+        let answer = prompt("Input number", "")
+
+        if (answer > 0) {
+            alert(1);
+        }   else if (answer < 0) {
+            alert(-1);
+        }   else if (answer = 0) {
+            alert(0);
+        }
+    </script>
+
+    <!--if..else statements to ternary operator-->
+    <script>
+        let message = (login == 'Employee') ? 'Hello' :
+            (login == 'Director') ? 'Greetings' :
+            (login == 'No login') ? 'No login' :
+            "";
+
+        alert(message);
+    </script>
+
+    <script>
+        let result = (a + b < 4) ? 'Below' : 'Over';
+    </script>
+
+    <!--Month to Season using Swtich Operator-->
+    <script>
+        const month = new Date().getMonth();
+
+        switch (month) {
+            case 0:
+            case 1: 
+            case 2:
+                console.log("Winter");
+                break;
+
+            case 3: 
+            case 4: 
+            case 5: 
+                console.log("Spring");
+                break;
+            
+            case 6: 
+            case 7: 
+            case 8:
+                console.log("Summer")
+                break;
+
+            case 9:
+            case 10:
+            case 11:
+                console.log("autumn")
+                break;
+            
+            default:
+                console.log("Something went wrong.");
+        }
+    </script>
+</body>
+</html>
